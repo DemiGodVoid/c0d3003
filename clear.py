@@ -4,7 +4,7 @@ RED = "\033[91m"
 RESET = "\033[0m"
 
 def clear_logs():
-    url = "https://vmpx.top/tools/clear.php"  
+    url = "https://vmpx.top/clear.php"  
 
     try:
         response = requests.get(url, timeout=5)
